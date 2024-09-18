@@ -3,12 +3,14 @@ package main
 import (
 	"fmt"
 	"runtime"
+	"slices"
 	"strconv"
 )
 
 func printSwitch() {
 	printSimpleSwitch()
 	fmt.Printf("Type switch: %s\n", returnTypeSwitch(42))
+	printSwitchWithFunctions()
 	// No switch expressions like return switch (v) { case "x" -> "result" }
 }
 
@@ -39,5 +41,20 @@ func returnTypeSwitch(value interface{}) string {
 		return "string: " + castedValue
 	default:
 		return "unknown"
+	}
+}
+
+func printSwitchWithFunctions() {
+	slice1 := []string{"a", "b", "c"}
+	slice2 := []string{"d", "e", "f"}
+	value := "e"
+
+	fmt.Print("Switch without variable, but with function: ")
+	// switch without variable is equal to `switch true`
+	switch {
+	case slices.Contains(slice1, value):
+		fmt.Println("slice1")
+	case slices.Contains(slice2, value):
+		fmt.Println("slice2")
 	}
 }
