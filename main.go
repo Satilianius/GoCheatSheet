@@ -16,6 +16,9 @@ func main() {
 
 	fmt.Println("\n----------Switch----------")
 	printSwitch()
+
+	fmt.Println("\n----------Defer----------")
+	printDefer()
 }
 
 // TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
