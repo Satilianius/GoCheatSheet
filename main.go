@@ -14,11 +14,14 @@ func main() {
 	fmt.Println("\n----------Functions------")
 	printFunctions()
 
-	fmt.Println("\n----------Switch----------")
+	fmt.Println("\n----------Switch---------")
 	printSwitch()
 
 	fmt.Println("\n----------Defer----------")
 	printDefer()
+
+	fmt.Println("\n----------Pointers-------")
+	printPointers()
 }
 
 // TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
