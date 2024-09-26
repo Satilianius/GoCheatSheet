@@ -22,6 +22,9 @@ func main() {
 
 	fmt.Println("\n----------Pointers-------")
 	printPointers()
+
+	fmt.Println("\n----------Structs-------")
+	printStructs()
 }
 
 // TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.
